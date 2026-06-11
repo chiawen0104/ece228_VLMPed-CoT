@@ -152,7 +152,11 @@ python qwen/test_fine_tuning_cot_joint.py
 │
 ├── qwen/                            # Model fine-tuning & evaluation
 │   ├── experiments/
-│   │   └── results/
+│   │   └── results/                 # Experiment Results 
+│   │   ├── exp1_multi_effect.py
+│   │   ├── exp2a_frame_ablation.py
+│   │   ├── exp2b_frame_duplication.py
+│   │   └── exp3_temporal_sensitivity.py
 │   ├── fine_tuning_COT-joint_stage_1.py
 │   ├── fine_tuning_COT-joint_stage_2.py
 │   ├── run_stage1.sh
