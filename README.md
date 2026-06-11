@@ -1,7 +1,9 @@
 # ECE228 VLMPed-CoT
 
 Final Project of UCSD ECE 228. Our project title: **How Do Vision Language Models Utilize Multi-Frame
-Temporal Information for Pedestrian Intention Prediction?** 
+Temporal Information for Pedestrian Intention Prediction?**
+
+We design controlled experiments to analyze how VLMPed-CoT and VLMPed-wo-CoT utilize multi-frame temporal information for pedestrian crossing intention prediction.  
 
 This repository is adapted from the official implementation of:
 
@@ -9,6 +11,14 @@ This repository is adapted from the official implementation of:
 
 Original repository: [lyc2121/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction](https://github.com/lyc2121/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction)  
 Original paper: https://www.sciopen.com/article/10.26599/COMMTR.2026.9640009
+
+
+Our fine-tuned model weights are available on Hugging Face:
+
+| Model | Link |
+|-------|------|
+| VLMPed-CoT | [chiawen0104/VLMPed-CoT](https://huggingface.co/chiawen0104/VLMPed-CoT) |
+| VLMPed-wo-CoT | [chiawen0104/VLMPed-wo-CoT](https://huggingface.co/chiawen0104/VLMPed-wo-CoT) |
 
 ---
 
