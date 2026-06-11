@@ -1,8 +1,7 @@
 # ECE228 VLMPed-CoT
 
 Final Project of UCSD ECE 228. Our project title: **How Do Vision Language Models Utilize Multi-Frame
-Temporal Information for Pedestrian Intention**
-Prediction? 
+Temporal Information for Pedestrian Intention Prediction?** 
 
 This repository is adapted from the official implementation of:
 
