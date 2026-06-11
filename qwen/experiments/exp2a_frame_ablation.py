@@ -260,7 +260,7 @@ if __name__ == "__main__":
     dataset = sys.argv[1] if len(sys.argv) > 1 else "pie"
     assert dataset in ("pie", "jaad"), f"dataset must be 'pie' or 'jaad', got '{dataset}'"
 
-    data_root = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian data generation/data"
+    data_root = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian_data_generation/data"
     base_path = f"{data_root}/pie" if dataset == "pie" else f"{data_root}/jaad-all"
 
     paths = {

@@ -12,5 +12,5 @@ export TRAIN_BATCH_SIZE=$BATCH_SIZE
 echo "CUDA_VISIBLE_DEVICES=$CUDA_ID"
 echo "TRAIN_BATCH_SIZE=$BATCH_SIZE"
 
-cd "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/Qwen 3B"
+cd "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/qwen"
 /data/chl343/miniconda3/envs/vlmped/bin/python fine_tuning_COT-joint_stage_1.py

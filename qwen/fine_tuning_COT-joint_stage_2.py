@@ -264,7 +264,7 @@ peft_model.enable_input_require_grads()  # 开启梯度检查点时，要执行�
 question = ""
 
 
-base_path_pie = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian data generation/data/pie"
+base_path_pie = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian_data_generation/data/pie"
 paths_pie = {
     "train": {
         "image": f"{base_path_pie}/scene image pedestrain bounding box/train",
@@ -303,7 +303,7 @@ train_dataset_pie = IntentDataset(
     data_set="pie")
 
 
-base_path_jaad = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian data generation/data/jaad-all"
+base_path_jaad = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian_data_generation/data/jaad-all"
 paths_jaad = {
     "train": {
         "image": f"{base_path_jaad}/scene image pedestrain bounding box/train",

@@ -246,8 +246,8 @@ def predict_action_batch(test_image_folder, test_label_folder, test_speed_folder
 if __name__ == "__main__":
     # When using the JAAD dataset, remember to multiply the speed by 10 at line 148
     # base_path='/JAAD-JAAD_2.0/data/jaad-beh/'
-    base_path = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian data generation/data/pie"
-    # base_path = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian data generation/data/jaad-all"
+    base_path = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian_data_generation/data/pie"
+    # base_path = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian_data_generation/data/jaad-all"
     paths = {
         "train": {
             "image": f"{base_path}/scene image pedestrain bounding box/train",
