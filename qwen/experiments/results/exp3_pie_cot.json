@@ -1,0 +1,49 @@
+{
+    "experiment": "Experiment 3: Temporal Sensitivity",
+    "model": "cot",
+    "dataset": "pie",
+    "results": [
+        {
+            "temporal_order": "original",
+            "accuracy": 0.8386,
+            "precision": 0.7863,
+            "recall": 0.5857,
+            "f1_score": 0.6713,
+            "auc": 0.7616,
+            "confusion_matrix": {
+                "tn": 2571,
+                "fp": 171,
+                "fn": 445,
+                "tp": 629
+            }
+        },
+        {
+            "temporal_order": "reverse",
+            "accuracy": 0.771,
+            "precision": 0.601,
+            "recall": 0.554,
+            "f1_score": 0.5766,
+            "auc": 0.705,
+            "confusion_matrix": {
+                "tn": 2347,
+                "fp": 395,
+                "fn": 479,
+                "tp": 595
+            }
+        },
+        {
+            "temporal_order": "shuffle",
+            "accuracy": 0.8223,
+            "precision": 0.7426,
+            "recall": 0.5642,
+            "f1_score": 0.6413,
+            "auc": 0.7438,
+            "confusion_matrix": {
+                "tn": 2532,
+                "fp": 210,
+                "fn": 468,
+                "tp": 606
+            }
+        }
+    ]
+}

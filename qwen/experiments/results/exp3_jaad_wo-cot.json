@@ -1,0 +1,49 @@
+{
+    "experiment": "Experiment 3: Temporal Sensitivity",
+    "model": "wo-cot",
+    "dataset": "jaad",
+    "results": [
+        {
+            "temporal_order": "original",
+            "accuracy": 0.8993,
+            "precision": 0.6651,
+            "recall": 0.8539,
+            "f1_score": 0.7478,
+            "auc": 0.8814,
+            "confusion_matrix": {
+                "tn": 5049,
+                "fp": 506,
+                "fn": 172,
+                "tp": 1005
+            }
+        },
+        {
+            "temporal_order": "reverse",
+            "accuracy": 0.8806,
+            "precision": 0.6095,
+            "recall": 0.8819,
+            "f1_score": 0.7208,
+            "auc": 0.8811,
+            "confusion_matrix": {
+                "tn": 4890,
+                "fp": 665,
+                "fn": 139,
+                "tp": 1038
+            }
+        },
+        {
+            "temporal_order": "shuffle",
+            "accuracy": 0.893,
+            "precision": 0.6481,
+            "recall": 0.8496,
+            "f1_score": 0.7353,
+            "auc": 0.8759,
+            "confusion_matrix": {
+                "tn": 5012,
+                "fp": 543,
+                "fn": 177,
+                "tp": 1000
+            }
+        }
+    ]
+}

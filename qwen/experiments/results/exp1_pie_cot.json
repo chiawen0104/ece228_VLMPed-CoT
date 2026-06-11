@@ -1,0 +1,63 @@
+{
+    "experiment": "Experiment 1: Multi-Frame Effectiveness",
+    "model": "cot",
+    "dataset": "pie",
+    "results": [
+        {
+            "num_frames": 1,
+            "accuracy": 0.7964,
+            "precision": 0.6713,
+            "recall": 0.5419,
+            "f1_score": 0.5997,
+            "auc": 0.719,
+            "confusion_matrix": {
+                "tn": 2457,
+                "fp": 285,
+                "fn": 492,
+                "tp": 582
+            }
+        },
+        {
+            "num_frames": 2,
+            "accuracy": 0.8124,
+            "precision": 0.7289,
+            "recall": 0.5307,
+            "f1_score": 0.6142,
+            "auc": 0.7267,
+            "confusion_matrix": {
+                "tn": 2530,
+                "fp": 212,
+                "fn": 504,
+                "tp": 570
+            }
+        },
+        {
+            "num_frames": 4,
+            "accuracy": 0.8202,
+            "precision": 0.7443,
+            "recall": 0.5503,
+            "f1_score": 0.6328,
+            "auc": 0.7381,
+            "confusion_matrix": {
+                "tn": 2539,
+                "fp": 203,
+                "fn": 483,
+                "tp": 591
+            }
+        },
+        {
+            "num_frames": 8,
+            "accuracy": 0.8386,
+            "precision": 0.7841,
+            "recall": 0.5885,
+            "f1_score": 0.6723,
+            "auc": 0.7625,
+            "confusion_matrix": {
+                "tn": 2568,
+                "fp": 174,
+                "fn": 442,
+                "tp": 632
+            }
+        }
+    ]
+}

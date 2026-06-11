@@ -1,0 +1,83 @@
+{
+    "experiment": "Experiment 2B: Frame Duplication",
+    "model": "base",
+    "dataset": "pie",
+    "full_accuracy": 0.2896,
+    "results": [
+        {
+            "setting": "full",
+            "accuracy": 0.2896,
+            "precision": 0.2796,
+            "recall": 0.9665,
+            "f1_score": 0.4337,
+            "auc": 0.4955,
+            "drop": 0.0,
+            "confusion_matrix": {
+                "tn": 67,
+                "fp": 2675,
+                "fn": 36,
+                "tp": 1038
+            }
+        },
+        {
+            "setting": "duplicate_t1",
+            "accuracy": 0.5681,
+            "precision": 0.3545,
+            "recall": 0.6508,
+            "f1_score": 0.459,
+            "auc": 0.5933,
+            "drop": -0.2786,
+            "confusion_matrix": {
+                "tn": 1469,
+                "fp": 1273,
+                "fn": 375,
+                "tp": 699
+            }
+        },
+        {
+            "setting": "duplicate_t2",
+            "accuracy": 0.5616,
+            "precision": 0.3482,
+            "recall": 0.6397,
+            "f1_score": 0.4509,
+            "auc": 0.5853,
+            "drop": -0.272,
+            "confusion_matrix": {
+                "tn": 1456,
+                "fp": 1286,
+                "fn": 387,
+                "tp": 687
+            }
+        },
+        {
+            "setting": "duplicate_t4",
+            "accuracy": 0.5886,
+            "precision": 0.3655,
+            "recall": 0.6276,
+            "f1_score": 0.462,
+            "auc": 0.6004,
+            "drop": -0.299,
+            "confusion_matrix": {
+                "tn": 1572,
+                "fp": 1170,
+                "fn": 400,
+                "tp": 674
+            }
+        },
+        {
+            "setting": "duplicate_t8",
+            "accuracy": 0.6284,
+            "precision": 0.3976,
+            "recall": 0.622,
+            "f1_score": 0.4851,
+            "auc": 0.6265,
+            "drop": -0.3388,
+            "confusion_matrix": {
+                "tn": 1730,
+                "fp": 1012,
+                "fn": 406,
+                "tp": 668
+            }
+        }
+    ]
+}

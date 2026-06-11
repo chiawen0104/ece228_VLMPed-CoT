@@ -1,0 +1,63 @@
+{
+    "experiment": "Experiment 1: Multi-Frame Effectiveness",
+    "model": "wo-cot",
+    "dataset": "jaad",
+    "results": [
+        {
+            "num_frames": 1,
+            "accuracy": 0.8871,
+            "precision": 0.6768,
+            "recall": 0.678,
+            "f1_score": 0.6774,
+            "auc": 0.8047,
+            "confusion_matrix": {
+                "tn": 5174,
+                "fp": 381,
+                "fn": 379,
+                "tp": 798
+            }
+        },
+        {
+            "num_frames": 2,
+            "accuracy": 0.9009,
+            "precision": 0.7297,
+            "recall": 0.6882,
+            "f1_score": 0.7084,
+            "auc": 0.8171,
+            "confusion_matrix": {
+                "tn": 5255,
+                "fp": 300,
+                "fn": 367,
+                "tp": 810
+            }
+        },
+        {
+            "num_frames": 4,
+            "accuracy": 0.913,
+            "precision": 0.7465,
+            "recall": 0.7604,
+            "f1_score": 0.7534,
+            "auc": 0.8528,
+            "confusion_matrix": {
+                "tn": 5251,
+                "fp": 304,
+                "fn": 282,
+                "tp": 895
+            }
+        },
+        {
+            "num_frames": 8,
+            "accuracy": 0.899,
+            "precision": 0.6645,
+            "recall": 0.853,
+            "f1_score": 0.747,
+            "auc": 0.8809,
+            "confusion_matrix": {
+                "tn": 5048,
+                "fp": 507,
+                "fn": 173,
+                "tp": 1004
+            }
+        }
+    ]
+}

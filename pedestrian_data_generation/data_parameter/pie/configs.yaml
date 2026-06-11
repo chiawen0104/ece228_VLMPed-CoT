@@ -1,0 +1,27 @@
+data_opts:
+  data_split_type: default
+  fstride: 1
+  min_track_size: 76
+  sample_type: all
+  seq_type: crossing
+  subset: default
+model_opts:
+  apply_class_weights: true
+  balance_data: false
+  dataset: pie
+  enlarge_ratio: 1.5
+  generator: true
+  normalize_boxes: true
+  obs_input_type:
+  - pedestrian box
+  - label
+  - speed
+  - scene image pedestrain bounding box
+  - pedestrian image
+  - pedestrain pose
+  obs_length: 16
+  overlap: 0.6
+  time_to_event:
+  - 30
+  - 60
+
