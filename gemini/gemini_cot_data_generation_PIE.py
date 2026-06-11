@@ -17,7 +17,7 @@ from PIL import Image
 from tqdm import tqdm
 from torch.utils.data import Dataset
 
-from google import genai                                     # pip install google-generativeai>=0.5.0
+from google import genai                                    
 from google.genai import types
 
 # ════════════════════════════════════════════════════════════
@@ -112,12 +112,10 @@ class IntentDataset(Dataset):
 # ════════════════════════════════════════════════════════════
 # 2.  Gemini ⤳ 推理包装
 # ════════════════════════════════════════════════════════════
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AQ.Ab8RN6LKLEX1M14GDYAJtTaQiLFQzUwQ9jcvSTnPwqEa97Lzxg")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "YOUR_API_KEY")
 assert GOOGLE_API_KEY, "请先在环境变量 GOOGLE_API_KEY 中放入你的 key"
 client = genai.Client(api_key=GOOGLE_API_KEY)
 MODEL = "models/gemini-2.5-flash-lite"
-# MODEL  = "models/gemini-2.5-flash-preview-04-17"
-# MODEL  = "models/gemini-2.5-pro-preview-05-06"
 
 def load_img_bytes(path: str) -> bytes:
     with open(path, "rb") as f:
