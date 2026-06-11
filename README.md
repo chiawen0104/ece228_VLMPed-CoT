@@ -1,7 +1,7 @@
 # ECE228 VLMPed-CoT
 
-Final Project of UCSD ECE 228. Our project title: How Do Vision Language Models Utilize Multi-Frame
-Temporal Information for Pedestrian Intention
+Final Project of UCSD ECE 228. Our project title: **How Do Vision Language Models Utilize Multi-Frame
+Temporal Information for Pedestrian Intention**
 Prediction? 
 
 This repository is adapted from the official implementation of:
@@ -40,6 +40,7 @@ Place the weight file into:
 ```bash
 pedestrian_data_generation/hrnet/weights/pose_hrnet_w48_384x288.pth
 ```
+For more information, please refer to [simple-HRNet](https://github.com/stefanopini/simple-HRNet).
 
 ### 2. Qwen2.5-VL-3B-Instruct Model Weights
 
@@ -112,5 +113,47 @@ Evaluate the fine-tuned model:
 python qwen/test_fine_tuning_cot_joint.py
 ```
 
-
+## Final Data Structure
+```
+├── gemini/                          # CoT data generation & inference scripts
+│   ├── gemini_cot_data_generation_JAAD.py
+│   ├── gemini_cot_data_generation_PIE.py
+│   ├── gemini_cot_inference.py
+│   └── gemini_without_cot_inference.py
+│
+├── pedestrian_data_generation/      # Data preprocessing pipeline
+│   ├── data/
+│   │   ├── jaad-all/
+│   │   │   ├── Cot_label/
+│   │   │   ├── label/
+│   │   │   ├── pdestrain pose/
+│   │   │   ├── pedestrain box/
+│   │   │   ├── pedestrian image/
+│   │   │   └── scene image pedestrain bounding box/
+│   │   └── pie/
+│   ├── data_parameter/
+│   ├── hrnet/
+│   │   └── weights/                 # Place pose_hrnet_w48_384x288.pth here
+│   ├── data_generation_class.py
+│   ├── Data_generation_jaad.py
+│   └── Data_generation_pie.py
+│   └── extract_image.py
+│   └── jaad_data.py
+│   └── pie_data.py
+│
+├── qwen/                            # Model fine-tuning & evaluation
+│   ├── experiments/
+│   │   └── results/
+│   ├── fine_tuning_COT-joint_stage_1.py
+│   ├── fine_tuning_COT-joint_stage_2.py
+│   ├── run_stage1.sh
+│   ├── run_stage2.sh
+│   ├── test_fine_tuning_cot_joint.py
+│   ├── test_cot_joint_without_fine-tuning.py
+│   └── test_without_cot_inference.py
+│
+└── LLM-model/
+    └── Qwen/
+        └── Qwen2.5-VL-3B-Instruct/  # Place downloaded model here
+```
 
