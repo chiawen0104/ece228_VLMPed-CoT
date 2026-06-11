@@ -44,7 +44,7 @@ os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
 
 
-model_id = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/LLM-model/Qwen/Qwen2.5-VL-3B-Instruct"
+model_id = "./LLM-model/Qwen/Qwen2.5-VL-3B-Instruct"
 
 
 
@@ -271,7 +271,7 @@ model.enable_input_require_grads()  # 开启梯度检查点时，要执行该方
 question = ""
 
 
-base_path_pie = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian_data_generation/data/pie"
+base_path_pie = "./pedestrian_data_generation/data/pie"
 paths_pie = {
     "train": {
         "image": f"{base_path_pie}/scene image pedestrain bounding box/train",
@@ -313,7 +313,7 @@ train_dataset_pie = IntentDataset(
     data_set="pie")
 
 
-base_path_jaad = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian_data_generation/data/jaad-all"
+base_path_jaad = "./pedestrian_data_generation/data/jaad-all"
 paths_jaad = {
     "train": {
         "image": f"{base_path_jaad}/scene image pedestrain bounding box/train",

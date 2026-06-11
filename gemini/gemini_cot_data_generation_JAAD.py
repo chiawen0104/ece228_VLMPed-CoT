@@ -160,7 +160,7 @@ def gemini_predict(scene_path: str, pose_paths: list[str],
 # ════════════════════════════════════════════════════════════
 # 3.  数据路径
 # ════════════════════════════════════════════════════════════
-ROOT = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian_data_generation/data/jaad-all"
+ROOT = "./pedestrian_data_generation/data/jaad-all"
 # ROOT ='/JAAD-JAAD_2.0/data/jaad-beh/'
 paths = dict(
     img = f"{ROOT}/scene image pedestrain bounding box/train",
@@ -205,7 +205,7 @@ pred_labels = []
 correct = 0
 log_rows = []
 
-cot_save_dir = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian_data_generation/data/jaad-all/Cot_label/train"
+cot_save_dir = "./pedestrian_data_generation/data/jaad-all/Cot_label/train"
 os.makedirs(cot_save_dir, exist_ok=True)
 
 for idx, sample in enumerate(tqdm(ds, desc="Gemini evaluating")):

@@ -17,7 +17,7 @@ from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
 from qwen_vl_utils import process_vision_info
 
 
-model_id = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/LLM-model/Qwen/Qwen2.5-VL-3B-Instruct"
+model_id = "./LLM-model/Qwen/Qwen2.5-VL-3B-Instruct"
 
 config = LoraConfig(
     task_type=TaskType.CAUSAL_LM,
@@ -260,7 +260,7 @@ if __name__ == "__main__":
     dataset = sys.argv[1] if len(sys.argv) > 1 else "pie"
     assert dataset in ("pie", "jaad"), f"dataset must be 'pie' or 'jaad', got '{dataset}'"
 
-    data_root = "/data/chl343/VLMPed-CoT-for-Pedestrian-Crossing-Intention-Prediction/pedestrian_data_generation/data"
+    data_root = "./pedestrian_data_generation/data"
     base_path = f"{data_root}/pie" if dataset == "pie" else f"{data_root}/jaad-all"
 
     paths = {
